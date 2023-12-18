@@ -13,20 +13,10 @@ const UserSchema = mongoose.Schema(
       unique: true,
       trim: true,
     },
-    name: {
-      type: String,
-    },
     password: {
       type: String,
+      required: true,
       trim: true,
-    },
-    picture: {
-      type: String,
-      default:
-        "https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg",
-    },
-    googleId: {
-      type: String,
     },
   },
   { timestapms: true }
